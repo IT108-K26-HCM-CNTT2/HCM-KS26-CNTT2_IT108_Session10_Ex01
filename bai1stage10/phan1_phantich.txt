@@ -1,0 +1,15 @@
+BÀI LÀM PHẦN 1: PHÂN TÍCH LỖI CÚ PHÁP MARKDOWN
+Họ và tên: Lê Gia Bảo
+MSSV: D26TXCN02
+
+1. Lỗi phân cấp tiêu đề (Heading):
+- Bạn sinh viên viết: `# Lợi ích của rau sạch` rồi nhảy xuống ngay `### Danh sách các loại rau`.
+- Nguyên nhân: Nhảy từ H1 xuống H3 làm mất cân đối cấu trúc. Đúng ra sau H1 phải là H2 (`##`).
+
+2. Lỗi chèn hình ảnh (Image):
+- Bạn sinh viên viết: `[Logo Dự án] (https://greentech.vn/logo.png)`
+- Nguyên nhân: Thiếu dấu chấm cảm `!` ở đầu và bị hở khoảng trắng giữa `]` và `(`. Viết như vậy Markdown sẽ tưởng là link web bình thường chứ không load được ảnh.
+
+3. Lỗi in đậm (Emphasis):
+- Bạn sinh viên viết: `*Rất quan trọng*` (chỉ có 1 dấu sao)
+- Nguyên nhân: 1 dấu sao là in nghiêng, muốn in đậm thì phải bao quanh bằng 2 dấu sao `**Rất quan trọng**`.
